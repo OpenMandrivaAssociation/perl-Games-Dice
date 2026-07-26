@@ -1,15 +1,13 @@
 %define upstream_name    Games-Dice
-%define upstream_version 0.046
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.046
+Release:	2
 
 Summary:	Simulates rolling dice
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Games-Dice
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Games-Dice-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Games-Dice-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -50,7 +48,7 @@ return an array of values, which can then be examined or processed in an
 application-dependent manner.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
