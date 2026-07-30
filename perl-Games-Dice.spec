@@ -2,7 +2,7 @@
 %define upstream_version 0.046
 Name:		perl-%{upstream_name}
 Version:	0.046
-Release:	2
+Release:	3
 
 Summary:	Simulates rolling dice
 License:	GPL+ or Artistic
