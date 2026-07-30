@@ -1,13 +1,14 @@
 %define upstream_name    Games-Dice
+%define upstream_version 0.046
 Name:		perl-%{upstream_name}
 Version:	0.046
-Release:	2
+Release:	1
 
 Summary:	Simulates rolling dice
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Games-Dice
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Games-Dice-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Games-Dice-0.046.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -66,15 +67,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man1/*
 %{_bindir}/roll
 %{perl_vendorlib}/*
-
-%changelog
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 0.20.0-2mdv2011.0
-+ Revision: 654334
-- rebuild for updated spec-helper
-
-* Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.20.0-1mdv2011.0
-+ Revision: 624921
-- import perl-Games-Dice
-
-
 
