@@ -2,7 +2,7 @@
 %define upstream_version 0.046
 Name:		perl-%{upstream_name}
 Version:	0.046
-Release:	5
+Release:	6
 
 Summary:	Simulates rolling dice
 License:	GPL+ or Artistic
@@ -59,6 +59,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 # soft: do not fail package on test failures
 set +e
 :  # soft check
+make test || :
 %make test || :
 
 %install
